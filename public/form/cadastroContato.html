@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Contato</title>
+    <link rel="stylesheet" href="/magazord/public/css/contato.css">
+</head>
+<body>
+    <h1 id="tituloForm">Cadastro de Contato</h1>
+
+    <form id="formContato">
+        <input type="hidden" id="idcontato">
+
+        <label>Id da Pessoa:</label>
+        <input type="number" id="idpessoa" readonly required><br>
+
+        <label>Tipo:</label>
+        <select id="tipocontato" required>
+            <option value="">Selecione</option>
+            <option value="0">Telefone</option>
+            <option value="1">Email</option>
+        </select><br>
+
+        <label>Descrição:</label>
+        <input type="text" id="descricaocontato" required><br>
+
+        <button type="submit">Salvar</button>
+        <button type="button" onclick="window.location.href=`/magazord/public/contato.html?idpessoa=${document.getElementById('idpessoa').value}`">Cancelar</button>
+    </form>
+
+    <script src="/magazord/public/js/form/cadastroContato.js"></script>
+</body>
+</html>

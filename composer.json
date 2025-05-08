@@ -1,0 +1,11 @@
+{
+    "require": {
+        "doctrine/orm": "^3.3",
+        "symfony/orm-pack": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Teste\\Magazord\\": "src/"
+        }
+    }
+}

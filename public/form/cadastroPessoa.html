@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoa</title>
+    <link rel="stylesheet" href="/magazord/public/css/pessoa.css">
+</head>
+<body>
+    <h1 id="tituloForm">Cadastro de Pessoa</h1>
+
+    <form id="formPessoa">
+        <input type="hidden" id="idpessoa">
+
+        <label>Nome:</label>
+        <input type="text" id="nomepessoa" required><br>
+
+        <label>CPF:</label>
+        <input type="text" id="cpfpessoa" required><br>
+
+        <button type="submit">Salvar</button>
+        <button type="button" onclick="window.location.href='/magazord/public/pessoa.html'">Cancelar</button>
+    </form>
+
+    <script src="/magazord/public/js/form/cadastroPessoa.js"></script>
+</body>
+</html>
